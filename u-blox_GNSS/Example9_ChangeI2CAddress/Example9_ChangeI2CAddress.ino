@@ -2,7 +2,7 @@
   This example shows how to change the I2C address of a u-blox module
 */
 
-#include <board.h>
+#include <IMXRT_board.h>
 
 #define DSerial SerialUSB
 

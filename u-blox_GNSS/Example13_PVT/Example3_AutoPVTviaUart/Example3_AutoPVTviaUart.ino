@@ -12,18 +12,12 @@
   Leave NMEA parsing behind. Now you can simply ask the module for the datums you want!
 */
 
-#include <board.h>
+#include <IMXRT_board.h>
 #define DSerial SerialUSB
 
 SFE_UBLOX_GNSS myGNSS;
 
-Uart mySerial(&sercom1, MOSI, SCK, SERCOM_RX_PAD_1, UART_TX_PAD_0);
-void SERCOM1_Handler()
-{
-  mySerial.IrqHandler();
-}
-
-//#define mySerial Serial2 // Uncomment this line to connect via Serial2
+#define mySerial Serial2 // Uncomment this line to connect via Serial2
 // - or -
 //Uart mySerial(10, 11); // Uncomment this line to connect via SoftwareSerial(RX, TX). Connect pin 10 to GNSS TX pin.
 

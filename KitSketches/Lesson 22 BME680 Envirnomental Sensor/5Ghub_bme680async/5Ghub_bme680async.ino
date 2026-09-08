@@ -19,7 +19,7 @@
 
 */
 
-#include <board.h>
+#include <IMXRT_board.h>
 
 #define SEALEVELPRESSURE_HPA (1013.25)
 

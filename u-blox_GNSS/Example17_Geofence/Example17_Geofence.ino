@@ -12,7 +12,7 @@
   This code has been tested on the ZOE-M8Q.
 */
 
-#include <board.h>
+#include <IMXRT_board.h>
 
 #define DSerial SerialUSB
 

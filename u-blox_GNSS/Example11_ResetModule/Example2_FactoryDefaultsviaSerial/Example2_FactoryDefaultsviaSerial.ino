@@ -4,16 +4,16 @@
 
 */
 
-#include <board.h>
+#include <IMXRT_board.h>
 
 #define DSerial SerialUSB
 
 
 SFE_UBLOX_GNSS myGNSS;
 
-//#define mySerial Serial1 // Uncomment this line to connect via Serial1
+#define mySerial Serial1 // Uncomment this line to connect via Serial1
 // - or -
-//SoftwareSerial mySerial(10, 11); // Uncomment this line to connect via SoftwareSerial(RX, TX). Connect pin 10 to GNSS TX pin.
+// SoftwareSerial mySerial(10, 11); // Uncomment this line to connect via SoftwareSerial(RX, TX). Connect pin 10 to GNSS TX pin.
 
 #define defaultRate 9600 // Uncomment this line if you are using an M8 - which defaults to 9600 Baud on UART1
 // - or -

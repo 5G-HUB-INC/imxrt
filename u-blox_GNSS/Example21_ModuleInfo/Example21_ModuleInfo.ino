@@ -17,7 +17,7 @@
 
 #include <Wire.h> //Needed for I2C to GNSS
 
-#include <board.h>
+#include <IMXRT_board.h>
 
 
 #define MAX_PAYLOAD_SIZE 384 // Override MAX_PAYLOAD_SIZE for getModuleInfo which can return up to 348 bytes
