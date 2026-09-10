@@ -9,15 +9,17 @@
   Leave NMEA parsing behind. Now you can simply ask the module for the datums you want!
 */
 
-#include <board.h>
+#include <IMXRT_board.h>
 
 #define DSerial SerialUSB
 
 
 SFE_UBLOX_GNSS myGNSS;
 
-#include <SoftwareSerial.h>
-SoftwareSerial mySerial(10, 11); // RX, TX. Pin 10 on Uno goes to TX pin on GNSS module.
+// #include <SoftwareSerial.h>
+// SoftwareSerial mySerial(10, 11); // RX, TX. Pin 10 on Uno goes to TX pin on GNSS module.
+
+#define mySerial Serial2 // Hardware UART2, native to the imxrt core.
 
 long lastTime = 0; //Simple local timer. Limits amount of I2C traffic to u-blox module.
 

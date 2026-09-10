@@ -5,7 +5,7 @@
   and access the data via a callback. No more polling!
 */
 
-#include <board.h>
+#include <IMXRT_board.h>
 
 #define DSerial SerialUSB
 

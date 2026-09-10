@@ -16,7 +16,7 @@
   Leave NMEA parsing behind. Now you can simply ask the module for the datums you want!
 */
 
-#include <board.h>
+#include <IMXRT_board.h>
 
 #define DSerial SerialUSB
 

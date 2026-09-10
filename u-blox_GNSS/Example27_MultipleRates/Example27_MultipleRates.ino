@@ -6,7 +6,7 @@
   POSECEF is output every five seconds;
   VELNED is output every ten seconds.
 */
-#include <board.h>
+#include <IMXRT_board.h>
 #define DSerial SerialUSB
 
 SFE_UBLOX_GNSS myGNSS;

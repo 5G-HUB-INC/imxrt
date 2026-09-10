@@ -7,7 +7,7 @@
   accurate timelapse camera shutter signal? This is the product for you!
 */
 
-#include <board.h>
+#include <IMXRT_board.h>
 #define DSerial SerialUSB
 
 SFE_UBLOX_GNSS myGNSS;

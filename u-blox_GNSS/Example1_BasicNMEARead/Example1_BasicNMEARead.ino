@@ -6,6 +6,7 @@
 
 */
 
+#include <IMXRT_board.h>
 #include <Wire.h> //Needed for I2C to GNSS
 
 SFE_UBLOX_GNSS myGNSS;
